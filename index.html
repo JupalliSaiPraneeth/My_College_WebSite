@@ -15,13 +15,30 @@
                 <img src="images/no-bg.png" alt="NRIIT Logo" class="nav-logo">
                 <div class="logo-text">NRI UNIVERSITY<span class="red-dot">.</span></div>
             </div>
-            <ul class="nav-links">
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M4 7H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M4 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M4 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <ul class="nav-links" id="primary-navigation">
+                <li class="nav-mobile-head">
+                    <span class="logo-text">NRI UNIVERSITY<span class="red-dot">.</span></span>
+                    <button class="nav-close" type="button" aria-label="Close menu">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </li>
                 <li><a href="#hero" class="nav-item">Home</a></li>
                 <li><a href="#programs" class="nav-item">Programs</a></li>
                 <li><a href="#departments" class="nav-item">Departments</a></li>
                 <li><a href="#" class="nav-btn">Apply Now</a></li>
             </ul>
         </div>
+        <div class="nav-backdrop" hidden></div>
     </nav>
 
     <main>
@@ -36,7 +53,7 @@
             </div>
             <div class="hero-visual">
                 <div class="image-reveal-wrapper">
-                    <img src="images/b.webp" alt="Campus" class="zoom-img">
+                    <img src="images/b.webp" alt="Campus" class="zoom-img parallax" data-parallax="0.22">
                 </div>
             </div>
         </section>
@@ -96,7 +113,7 @@
                     <p>Computer Science & Engineering: The foundation of the digital age, focusing on algorithms and software.</p>
                 </div>
                 <div class="dept-photo">
-                    <img src="images/b.webp" alt="CSE">
+                    <img src="images/b.webp" alt="CSE" class="parallax" data-parallax="0.14">
                 </div>
             </div>
 
@@ -107,7 +124,7 @@
                     <p>Electrical and Electronics: Pioneering the future of intelligent systems and automated reasoning.</p>
                 </div>
                 <div class="dept-photo">
-                    <img src="images/eee.webp" alt="CSM">
+                    <img src="images/eee.webp" alt="CSM" class="parallax" data-parallax="0.14">
                 </div>
             </div>
 
@@ -118,7 +135,7 @@
                     <p>CSE (Data Science): Turning vast amounts of data into actionable insights and intelligence.</p>
                 </div>
                 <div class="dept-photo">
-                    <img src="images/csd.webp" alt="CSD">
+                    <img src="images/csd.webp" alt="CSD" class="parallax" data-parallax="0.14">
                 </div>
             </div>
 
@@ -129,7 +146,7 @@
                     <p>Information Technology: Managing and securing the infrastructure of the modern world.</p>
                 </div>
                 <div class="dept-photo">
-                    <img src="images/it2.webp" alt="IT">
+                    <img src="images/it2.webp" alt="IT" class="parallax" data-parallax="0.14">
                 </div>
             </div>
 
@@ -140,7 +157,7 @@
                     <p>Electronics & Comm: Innovations in telecommunications, robotics, and hardware design.</p>
                 </div>
                 <div class="dept-photo">
-                    <img src="images/ece.webp" alt="ECE">
+                    <img src="images/ece.webp" alt="ECE" class="parallax" data-parallax="0.14">
                 </div>
             </div>
         </section>
